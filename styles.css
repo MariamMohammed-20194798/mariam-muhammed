@@ -91,6 +91,10 @@ body {
   padding-top: 80px;
 }
 
+.projects {
+  padding: 100px 0;
+}
+
 .hero-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -844,6 +848,10 @@ body {
 
 .social-link:hover {
   background: #60a5fa;
+}
+
+.project-link {
+  text-decoration: none;
 }
 
 /* Responsive Design */
