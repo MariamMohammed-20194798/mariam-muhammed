@@ -1,4 +1,4 @@
-# Muhannad Salkini - Personal Portfolio Website
+# Mariam Muhammed- Personal Portfolio Website
 
 A modern, responsive personal portfolio website built for GitHub Pages showcasing skills, experience, and professional background.
 
@@ -101,9 +101,9 @@ mariam-muhammed/
 
 ## 📧 Contact Information
 
-- **Location**: Istanbul, Turkey
-- **Email**: muhannad.salkini.me@gmail.com
-- **LinkedIn**: Muhannad Salkini
+- **Location**: Cairo, Egypt.
+- **Email**: mariammuhammedd33@gmail.com
+- **LinkedIn**: Mariam Muhammed
 
 ## 🔧 Customization
 

@@ -3,7 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhannad Salkini - TypeScript Expert & Full Stack Developer</title>
+    <title>Mariam Muhammed - TypeScript Expert & Full Stack Developer</title>
+
+    <!-- Critical CSS to prevent navbar flash -->
+    <style>
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(15, 23, 42, 0.95) !important;
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        padding: 1rem 0;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+      }
+      body {
+        background-color: #0f172a;
+      }
+    </style>
+
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -18,9 +36,6 @@
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
-        <div class="nav-logo">
-          <a href="#home">Muhannad Salkini</a>
-        </div>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="#home" class="nav-link">Home</a>
@@ -54,7 +69,7 @@
       <div class="hero-container">
         <div class="hero-content">
           <h2 class="hero-greeting">Hello I'm</h2>
-          <h1 class="hero-name">Muhannad Salkini</h1>
+          <h1 class="hero-name">Mariam Muhammed</h1>
           <div class="hero-title">
             <span>I'm a </span>
             <span
@@ -64,16 +79,12 @@
           </div>
           <p class="hero-location">
             <i class="fas fa-map-marker-alt"></i>
-            Istanbul, Turkey
+            Cairo, Egypt
           </p>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Get In Touch</a>
-            <a href="#about" class="btn btn-outline">Learn More</a>
-          </div>
         </div>
         <div class="hero-image">
           <div class="profile-placeholder">
-            <i class="fas fa-user-circle"></i>
+            <img src="myPhoto.jpg" alt="Mariam Muhammed" class="profile-img" />
           </div>
         </div>
       </div>
@@ -82,15 +93,15 @@
     <!-- About Section -->
     <section id="about" class="about">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
         <div class="about-content">
           <div class="about-text">
+            <h2 class="section-title-left">About Me</h2>
             <p>
-              Hi, I'm Muhannad. A dedicated Web developer driven by a profound passion for
-              software craftsmanship. I've honed my skills with MERN stack, Laravel, and
-              advanced database designs. I've also crafted APIs in C# and built different
-              systems using ASP.net showcasing my adaptability and project management
-              abilities.
+              Hi, I’m Mariam, a passionate Full-Stack Developer with expertise in crafting
+              robust, scalable web applications. I specialize in the MERN stack and
+              advanced database design, and I’ve built RESTful APIs in JavaScript. My
+              adaptability and strong project-management skills enable me to deliver
+              high-quality solutions across the full software lifecycle.
             </p>
 
             <h3>Currently, immersed in:</h3>
@@ -101,47 +112,17 @@
               <span class="tech-badge">JavaScript</span>
               <span class="tech-badge">TypeScript</span>
               <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Next.js</span>
+              <span class="tech-badge">Nest.js</span>
             </div>
           </div>
 
           <div class="about-stats">
-            <div class="stat-card">
-              <h3>Education</h3>
-              <div class="education-item">
-                <h4>Bachelor's in Computer Engineering</h4>
-                <p>Karabuk University (2019-2024)</p>
-                <p>Grade: 3.06/4.00</p>
-              </div>
-              <div class="education-item">
-                <h4>High School Diploma</h4>
-                <p>T.O.B.B. Anadolu High School (2015-2019)</p>
-                <p>Grade: 82.25/100</p>
-              </div>
-            </div>
-
-            <div class="stat-card">
-              <h3>Languages</h3>
-              <div class="language-item">
-                <span>Turkish</span>
-                <div class="progress-bar">
-                  <div class="progress" style="width: 90%"></div>
-                </div>
-                <span>90%</span>
-              </div>
-              <div class="language-item">
-                <span>Arabic</span>
-                <div class="progress-bar">
-                  <div class="progress" style="width: 90%"></div>
-                </div>
-                <span>90%</span>
-              </div>
-              <div class="language-item">
-                <span>English</span>
-                <div class="progress-bar">
-                  <div class="progress" style="width: 70%"></div>
-                </div>
-                <span>70%</span>
-              </div>
+            <h2 class="section-title-right">Education</h2>
+            <div class="education-item">
+              <h3>Bachelor's Degree in Computer Engineering</h3>
+              <p>Future University in Egypt (2019-2023)</p>
+              <p>GPA: 3.5/4.00</p>
             </div>
           </div>
         </div>
@@ -156,9 +137,19 @@
           <div class="skill-category">
             <h3><i class="fas fa-code"></i> Languages</h3>
             <div class="skill-items">
-              <span class="skill-item">JavaScript/TypeScript</span>
+              <span class="skill-item">TypeScript</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">Python</span>
               <span class="skill-item">C#</span>
-              <span class="skill-item">PHP</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-brain"></i> Backend Technologies</h3>
+            <div class="skill-items">
+              <span class="skill-item">Node.js</span>
+              <span class="skill-item">Express.js</span>
+              <span class="skill-item">Nest.js</span>
             </div>
           </div>
 
@@ -168,26 +159,8 @@
               <span class="skill-item">React.js</span>
               <span class="skill-item">Next.js</span>
               <span class="skill-item">CSS Frameworks</span>
+              <span class="skill-item">Tailwind CSS</span>
               <span class="skill-item">Redux</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3><i class="fas fa-paint-brush"></i> Design</h3>
-            <div class="skill-items">
-              <span class="skill-item">Figma</span>
-              <span class="skill-item">Photoshop</span>
-              <span class="skill-item">Illustrator</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3><i class="fas fa-globe"></i> Web Applications</h3>
-            <div class="skill-items">
-              <span class="skill-item">MERN Stack</span>
-              <span class="skill-item">Laravel</span>
-              <span class="skill-item">ASP.NET</span>
-              <span class="skill-item">MVC</span>
             </div>
           </div>
 
@@ -195,18 +168,10 @@
             <h3><i class="fas fa-database"></i> Databases</h3>
             <div class="skill-items">
               <span class="skill-item">MongoDB</span>
-              <span class="skill-item">MS SQL Server</span>
+              <span class="skill-item">Firebase</span>
               <span class="skill-item">MySQL</span>
-              <span class="skill-item">Oracle</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
-            <div class="skill-items">
-              <span class="skill-item">React Native</span>
-              <span class="skill-item">Progressive Web Apps</span>
-              <span class="skill-item">Responsive Design</span>
+              <span class="skill-item">PostgreSQL</span>
+              <span class="skill-item">SQL Server</span>
             </div>
           </div>
 
@@ -214,8 +179,6 @@
             <h3><i class="fas fa-server"></i> DevOps & Deployment</h3>
             <div class="skill-items">
               <span class="skill-item">Docker</span>
-              <span class="skill-item">CI/CD Pipelines</span>
-              <span class="skill-item">AWS/Azure Cloud</span>
               <span class="skill-item">Git/GitHub</span>
             </div>
           </div>
@@ -230,39 +193,69 @@
           </div>
         </div>
 
-        <h3 class="personal-skills-title">Personal Skills</h3>
-        <div class="personal-skills">
-          <div class="personal-skill">
-            <i class="fas fa-users"></i>
-            <span>Teamwork</span>
+        <div class="skills-personal-section">
+          <div class="personal-skills-column">
+            <h3>Personal Skills</h3>
+            <div class="personal-skills-grid">
+              <div class="personal-skill-item">
+                <i class="fas fa-check"></i>
+                <span>Teamwork</span>
+              </div>
+              <div class="personal-skill-item">
+                <i class="fas fa-check"></i>
+                <span>Time Management</span>
+              </div>
+              <div class="personal-skill-item">
+                <i class="fas fa-check"></i>
+                <span>Creativity</span>
+              </div>
+              <div class="personal-skill-item">
+                <i class="fas fa-check"></i>
+                <span>Motivation</span>
+              </div>
+              <div class="personal-skill-item">
+                <i class="fas fa-check"></i>
+                <span>Self-Learning</span>
+              </div>
+              <div class="personal-skill-item">
+                <i class="fas fa-check"></i>
+                <span>Research</span>
+              </div>
+              <div class="personal-skill-item">
+                <i class="fas fa-check"></i>
+                <span>Organization</span>
+              </div>
+              <div class="personal-skill-item">
+                <i class="fas fa-check"></i>
+                <span>Problem Solving</span>
+              </div>
+            </div>
           </div>
-          <div class="personal-skill">
-            <i class="fas fa-clock"></i>
-            <span>Time Management</span>
-          </div>
-          <div class="personal-skill">
-            <i class="fas fa-lightbulb"></i>
-            <span>Creativity</span>
-          </div>
-          <div class="personal-skill">
-            <i class="fas fa-rocket"></i>
-            <span>Motivation</span>
-          </div>
-          <div class="personal-skill">
-            <i class="fas fa-graduation-cap"></i>
-            <span>Self-Learning</span>
-          </div>
-          <div class="personal-skill">
-            <i class="fas fa-search"></i>
-            <span>Research</span>
-          </div>
-          <div class="personal-skill">
-            <i class="fas fa-list"></i>
-            <span>Organization</span>
-          </div>
-          <div class="personal-skill">
-            <i class="fas fa-puzzle-piece"></i>
-            <span>Problem Solving</span>
+
+          <div class="languages-column">
+            <h3>Languages</h3>
+            <div class="languages-list">
+              <div class="language-skill">
+                <div class="language-header">
+                  <span class="language-name">Arabic</span>
+                  <span class="language-level">Native</span>
+                  <span class="language-percentage">95%</span>
+                </div>
+                <div class="language-progress">
+                  <div class="language-progress-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="language-skill">
+                <div class="language-header">
+                  <span class="language-name">English</span>
+                  <span class="language-level">Professional working proficiency</span>
+                  <span class="language-percentage">75%</span>
+                </div>
+                <div class="language-progress">
+                  <div class="language-progress-fill" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -277,8 +270,8 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <h3>Full Stack Developer</h3>
-              <h4>TIXAE AI</h4>
-              <span class="timeline-date">Oct 2024 - Present</span>
+              <h4>Convocore AI</h4>
+              <span class="timeline-date">Jul 2024 - Present</span>
               <p>
                 Developing and maintaining the company's website and internal tools using
                 React, Next.js, Node.js, and TypeScript.
@@ -294,8 +287,8 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <h3>Back-end Developer Intern</h3>
-              <h4>Elmali Tech</h4>
-              <span class="timeline-date">Feb 2024 - May 2024</span>
+              <h4>AITB</h4>
+              <span class="timeline-date">Jul 2023 - Aug 2023</span>
               <p>
                 Interned at Elmali Tech, honing back-end development skills in Node.js and
                 TypeScript. Contributed to server-side logic, API development, and
@@ -311,157 +304,30 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3>Information Technology Intern</h3>
-              <h4>Karabuk University</h4>
-              <span class="timeline-date">Jul 2023 - Aug 2023</span>
+              <h3>Graduation Project Recommendation & Search Engine System</h3>
+              <h4>Future University in Egypt</h4>
+              <span class="timeline-date">Oct 2023 - Jul 2023</span>
               <p>
-                Interned at Directorate of Information Technology, handling network,
-                technical support, camera operations, and support services. Also worked on
-                web development.
+                Developed a university-wide search engine using React, Node.js, and
+                TypeScript, enabling students to explore past projects, articles, and
+                other academic resources. Built a recommendation engine that suggests the
+                most suitable graduation projects based on each student’s course
+                performance.
               </p>
               <div class="responsibilities">
-                <span class="responsibility">Research</span>
-                <span class="responsibility">Network</span>
+                <span class="responsibility">Graduation Project</span>
               </div>
             </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Self-employed E-commerce</h3>
-              <h4>Independent</h4>
-              <span class="timeline-date">Oct 2018 - Apr 2022</span>
-              <p>
-                Selling 3D printers and components at the most relevant E-stores in
-                Turkey.
-              </p>
-              <div class="responsibilities">
-                <span class="responsibility">E-commerce</span>
-                <span class="responsibility">Research</span>
-                <span class="responsibility">Management</span>
-                <span class="responsibility">Self-Employment</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h3 class="volunteering-title">Volunteering Experience</h3>
-        <div class="volunteering-grid">
-          <div class="volunteer-item">
-            <h4>Team member of GDSC Karabuk</h4>
-            <span class="volunteer-date">2020-2022</span>
-            <p>
-              Managing social media contents and designing logos, posters, and promotion
-              videos for Google Developer Students Club Karabuk.
-            </p>
-          </div>
-
-          <div class="volunteer-item">
-            <h4>Team member of WTM Karabuk</h4>
-            <span class="volunteer-date">2020-2021</span>
-            <p>Managing social media contents of Women Techmakers Karabuk.</p>
-          </div>
-
-          <div class="volunteer-item">
-            <h4>Team member of University4Society</h4>
-            <span class="volunteer-date">2021-2022</span>
-            <p>
-              Contributing to social impact initiatives through technology and community
-              engagement.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <h2 class="section-title">Licenses & Certifications</h2>
-        <div class="certificates-grid">
-          <div class="certificate-item">
-            <div class="certificate-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <h4>Bachelor's Degree in Computer Engineering</h4>
-            <p>Karabuk University</p>
-          </div>
-
-          <div class="certificate-item">
-            <div class="certificate-icon">
-              <i class="fas fa-database"></i>
-            </div>
-            <h4>Oracle Database Design & SQL Programming</h4>
-            <p>Oracle Corporation</p>
-          </div>
-
-          <div class="certificate-item">
-            <div class="certificate-icon">
-              <i class="fas fa-brain"></i>
-            </div>
-            <h4>Supervised Machine Learning Regression and Classification</h4>
-            <p>Coursera</p>
-          </div>
-
-          <div class="certificate-item">
-            <div class="certificate-icon">
-              <i class="fab fa-git-alt"></i>
-            </div>
-            <h4>Git and GitHub Certificate</h4>
-            <p>GitHub</p>
-          </div>
-
-          <div class="certificate-item">
-            <div class="certificate-icon">
-              <i class="fas fa-flask"></i>
-            </div>
-            <h4>Tubitak Bilim Fuari Katilim Belgesi 2018</h4>
-            <p>TÜBİTAK</p>
-          </div>
-
-          <div class="certificate-item">
-            <div class="certificate-icon">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <h4>AFAD Disaster Awareness Education Programs</h4>
-            <p>AFAD</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="skills" class="skills">
       <div class="container">
         <h2 class="section-title">Contact Me</h2>
         <div class="contact-content">
-          <div class="contact-info">
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h4>Address</h4>
-                <p>Istanbul, Turkey</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <i class="fab fa-linkedin"></i>
-              <div>
-                <h4>LinkedIn</h4>
-                <p>Muhannad Salkini</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <h4>Email</h4>
-                <p>muhannad.salkini.me@gmail.com</p>
-              </div>
-            </div>
-          </div>
-
           <div class="contact-form">
             <form id="contactForm">
               <div class="form-row">
@@ -488,6 +354,52 @@
               <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
           </div>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Address</h4>
+                <a
+                  href="https://www.google.com/maps/place/New+Plan+Developments/@30.0850582,31.3357937,17z/data=!4m14!1m7!3m6!1s0x14583f42766868db:0x820df5be8c23d1b5!2sNew+Plan+Developments!8m2!3d30.0851325!4d31.3384759!16s%2Fg%2F11qq71blzy!3m5!1s0x14583f42766868db:0x820df5be8c23d1b5!8m2!3d30.0851325!4d31.3384759!16s%2Fg%2F11qq71blzy?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  >62 El-Thawra St, Masr El-Gedida, Cairo Governorate 11757</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/mariammuhammedd" target="_blank"
+                  >Mariam Muhammed</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/MariamMohammed-20194798" target="_blank"
+                  >Mariam Muhammed</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&to=mariammuhammedd33@gmail.com"
+                  target="_blank"
+                  >mariammuhammedd33@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -495,11 +407,19 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2024 Muhannad Salkini. All rights reserved.</p>
+        <p>&copy; 2024 Mariam Muhammed. All rights reserved.</p>
         <div class="social-links">
-          <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-          <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/mariammuhammedd" class="social-link"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/MariamMohammed-20194798" class="social-link"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=mariammuhammedd33@gmail.com"
+            class="social-link"
+            ><i class="fas fa-envelope"></i
+          ></a>
         </div>
       </div>
     </footer>
