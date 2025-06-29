@@ -821,11 +821,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
 .social-links {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .social-link {
