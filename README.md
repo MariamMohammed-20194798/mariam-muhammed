@@ -1,6 +1,6 @@
-# Mariam Muhammed- Personal Portfolio Website
+# Mariam Muhammed- Personal Projects Website
 
-A modern, responsive personal portfolio website built for GitHub Pages showcasing skills, experience, and professional background.
+A modern, responsive personal Projects website built for GitHub Pages showcasing skills, experience, and professional background.
 
 ## 🌟 Features
 
@@ -20,7 +20,7 @@ A modern, responsive personal portfolio website built for GitHub Pages showcasin
 2. **About** - Personal description, education, and language skills
 3. **Skills** - Technical and personal skills showcase
 4. **Experience** - Work history and volunteering experience
-5. **Portfolio** - Licenses and certifications
+5. **Projects** - Licenses and certifications
 6. **Contact** - Contact information and message form
 
 ## 🛠 Technologies Used
@@ -107,7 +107,7 @@ mariam-muhammed/
 
 ## 🔧 Customization
 
-To customize this portfolio for your own use:
+To customize this Projects for your own use:
 
 1. **Update Personal Information**:
 
@@ -124,7 +124,7 @@ To customize this portfolio for your own use:
 3. **Add Content**:
 
    - Add new sections to `index.html`
-   - Include portfolio projects
+   - Include Projects projects
    - Add social media links
 
 4. **Enhance Functionality**:
